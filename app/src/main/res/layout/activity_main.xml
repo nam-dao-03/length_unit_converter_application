@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tertiary_color"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Length Unit Converter Application"
+        android:textSize="28sp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <Spinner
+            android:id="@+id/spn_convert_to"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"/>
+        <Spinner
+            android:id="@+id/spn_to_convert"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_unit"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input_add_new"
+        android:hint="Input here..."
+        android:paddingStart="8dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/secondary_color"
+            android:background="@drawable/custom_background_white_stroke_secondary_color_corners_5"/>
+        <Button
+            android:id="@+id/btn_convert"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_background_secondary_color_stroke_secondary_color_corners_5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/tv_convert_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="60sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_unit_convert_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Metre"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textSize="80sp"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-30dp">
+        <TextView
+            android:id="@+id/tv_to_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="60sp"
+            android:maxLines="2"
+            android:breakStrategy="simple"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_unit_to_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metre"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:maxLines="2"
+            android:breakStrategy="simple"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>
